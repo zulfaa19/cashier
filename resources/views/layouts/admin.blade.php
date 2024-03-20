@@ -159,7 +159,7 @@
                                 class="nav-link {{ request()->is('admin/transaksi/index') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-shopping-cart"></i>
                                 <p>
-                                    Transaksi
+                                    Detail Transaksi
                                 </p>
                             </a>
                         </li>
