@@ -144,7 +144,25 @@
                                 </li>
                             </ul>
                         </li>
-
+                        <li class="nav-header">Transaksi</li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.transaksi.create') }}"
+                                class="nav-link {{ request()->is('admin/transaksi/create') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-cart-plus"></i>
+                                <p>
+                                    Transaksi
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin.transaksi.index') }}"
+                                class="nav-link {{ request()->is('admin/transaksi/index') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-shopping-cart"></i>
+                                <p>
+                                    Transaksi
+                                </p>
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
@@ -203,6 +221,24 @@
     <script src="{{ asset('assets/vendor/adminlte') }}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="{{ asset('assets/vendor/adminlte') }}/dist/js/adminlte.min.js?v=3.2.0"></script>
+        <script>
+            function formatRupiah(angka, prefix){
+                var number_string = angka.replace(/[^,\d]/g, '').toString(),
+                    split   		= number_string.split(','),
+                    sisa     		= split[0].length % 3,
+                    rupiah     		= split[0].substr(0, sisa),
+                    ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
+
+                // tambahkan titik jika yang di input sudah menjadi angka ribuan
+                if(ribuan){
+                    separator = sisa ? '.' : '';
+                    rupiah += separator + ribuan.join('.');
+                }
+
+                rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+                return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+		    }
+        </script>
     @yield('js')
 </body>
 

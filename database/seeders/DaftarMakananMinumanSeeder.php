@@ -20,5 +20,19 @@ class DaftarMakananMinumanSeeder extends Seeder
             'harga' => 5000
         ]);
         $makanan->save();
+
+        $rendang = new DaftarMakananMinuman();
+        $rendang->fill([
+            'nama' => 'Rendang',
+            'harga' => 7000
+        ]);
+        $rendang->save();
+
+        $esteh = new DaftarMakananMinuman();
+        $esteh->fill([
+            'nama' => 'Es Teh',
+            'harga' => 1500
+        ]);
+        $esteh->save();
     }
 }
