@@ -38,7 +38,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Co
         Route::get('', [TransaksiController::class, 'index'])->name('index');
         Route::get('create', [TransaksiController::class, 'create'])->name('create');
         Route::post('store', [TransaksiController::class, 'store'])->name('store');
-        Route::delete('destroy', [TransaksiController::class, 'destroy'])->name('destroy');
+        Route::delete('destroy/{id}', [TransaksiController::class, 'destroy'])->name('destroy');
     });
 });
 
