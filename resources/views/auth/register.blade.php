@@ -41,8 +41,8 @@
                         <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
-                            <label class="form-label" for="form3Example3c"><i class="bi bi-envelope-at-fill"></i> Username</label>
-                            <input type="username" id="form3Example3c" class="form-control form-control-lg py-3" name="username" autocomplete="off" placeholder="enter your username" style="border-radius:25px ;" required />
+                            <label class="form-label" for="form3Example2c"><i class="bi bi-envelope-at-fill"></i> Username</label>
+                            <input type="username" id="form3Example2c" class="form-control form-control-lg py-3" name="username" autocomplete="off" placeholder="enter your username" style="border-radius:25px ;" required />
 
                         </div>
                         </div>
@@ -51,7 +51,7 @@
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
                             <label class="form-label" for="form3Example3c"><i class="bi bi-envelope-at-fill"></i> Email</label>
-                            <input type="email" id="form3Example3c" class="form-control form-control-lg py-3" name="username" autocomplete="off" placeholder="enter your email" style="border-radius:25px ;" required />
+                            <input type="email" id="form3Example3c" class="form-control form-control-lg py-3" name="email" autocomplete="off" placeholder="enter your email" style="border-radius:25px ;" required />
 
                         </div>
                         </div>
