@@ -81,11 +81,11 @@
                     </form>
                     <p align="center">i have already account <a href="{{ route('login') }}" class="text-warning" style="font-weight:600; text-decoration:none;">Login</a></p>
                     </div>
-                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                    <!-- <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
-                    <img src="https://media.tenor.com/LHDqEFL5mswAAAAi/maneki-neko.gif" class="img-fluid" alt="Sample image" height="300px" width="500px">
+                    <img src="https://media.tenor.com/vQCRrPrY36QAAAAi/small-businesses-need-support-now-small-business.gif" class="img-fluid" alt="Sample image" height="300px" width="500px">
 
-                    </div>
+                    </div> -->
                 </div>
                 </div>
             </div>
